@@ -349,6 +349,18 @@
       </div>
 
     </section><!-- /Skills Section -->
+
+    <script>
+      // Function to animate the progress bars based on the aria-valuenow attribute
+      document.addEventListener("DOMContentLoaded", function() {
+        const progressBars = document.querySelectorAll('.progress-bar');
+    
+        progressBars.forEach(function(bar) {
+          const value = bar.getAttribute('aria-valuenow');
+          bar.style.width = value + '%'; // Set the width based on the aria-valuenow value
+        });
+      });
+    </script>
    
 
     
